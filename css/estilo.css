@@ -1,0 +1,210 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/**************************PORTAFOLIO*********************/
+.portfolio-item {
+    margin-bottom: 25px;
+}
+/*-------------------SOCIAL_NETWORKS----------------------*/
+.caja-social #facebook{
+	position: relative;
+	z-index: 1;
+	bottom: 55px;
+}
+.caja-social #twitter{
+	position: relative;
+	z-index: 5;
+	right: 30px;
+	bottom: 45px;
+}
+.caja-social #google-plus{
+	position: relative;
+	z-index: 2;
+	left: 75px;
+	bottom: 45px;
+}
+.caja-social #youtube-play{
+	position: relative;
+	z-index: 3;
+	left: 35px;
+	bottom: 20px;
+}
+.caja-social #instagram{
+	position: relative;
+	z-index: 4;
+	right: 82px;
+	bottom: 23px;
+}
+#facebook .icon-button{
+	background-color: #3B5998;
+}
+#twitter .icon-button{
+	background-color: #4099ff;
+}
+#instagram .icon-button{
+	background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+	background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+	background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+	background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+	background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+#google-plus .icon-button{
+	background-color: #db5a3c;
+}
+#youtube-play .icon-button{
+	background: -webkit-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+	background: -moz-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+	background: -o-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+	background: -ms-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+	background: linear-gradient(bottom, #6D0202 22%, rgb(201, 0, 0) 61%);
+}
+.caja-social a {
+	text-align: center;
+	font-size: 12px;
+}
+.icon-button {
+	border-radius: 3em;
+	cursor: pointer;
+	display: inline-block;
+	height: 3em;
+	line-height: 5em;
+	position: relative;
+	width: 3em;
+}
+.icon-button span {
+	display: block;
+	height: 0;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3em;
+	height: 3em;
+	border-radius: 6em;
+	margin: -1.5em;
+}
+
+.facebook span,
+.twitter span,
+.instagram span,
+.google-plus span,
+.youtube-play span {
+	background-color: #E6E6E6;
+}
+/* Iconos */
+.icon-button i {
+	color: white;
+	left: 0;
+	line-height: 3em;
+	position: absolute;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 3em;
+	z-index: 2;
+	
+}
+.icon-button .fa-facebook,
+.icon-button .fa-twitter,
+.icon-button .fa-instagram, 
+.icon-button .fa-google-plus, 
+.icon-button .fa-youtube-play {
+	color: white;
+}
+.icon-button:hover .fa-facebook{
+	color: #3b5998;
+} 
+.icon-button:hover .fa-twitter{
+	color: #4099ff;
+} 
+.icon-button:hover .fa-instagram{
+	color: #3051F1;
+}
+.icon-button:hover .fa-google-plus{
+	color: #db5a3c;
+} 
+.icon-button:hover .fa-youtube-play {
+	color: #bb0000;
+}
+/*-----------------SOCIAL_NETWORKS-------------------------*/
+/***************************INDICADORES ECONOMICOS****************************************/
+#indicadores {
+    background-color: #E6E6E6;
+}
+#indicadores img{
+	width:302px;
+	height:54px;
+	color: #333;
+}
+.indicadores_span {
+    background-color: #4C4C4C;
+    color: #fff;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 70px;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.marque {
+    margin-top: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 54px;
+}
+.row {
+    margin-left: -15px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+/***********************************UBICACION***********************************************/
+@media (min-width: 768px){
+.col-sm-12 {
+    width: 100%;
+}
+}
+@media (min-width: 768px){
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, 
+.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+}
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, 
+.col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, 
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, 
+.col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, 
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, 
+.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, 
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, 
+.col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}

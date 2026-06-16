@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<!-- responsive -->
+<meta content="anderson Quintero" name="author" />
+	<!-- adsi -->
+<meta content="sitio de consultas en SQL" name="description" />
+    <!-- descripcion -->
+<meta content="consultas, SQL, productos" name="keywords" />
+    <!-- palabras clave --> 
+    <title>Document</title>   
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/bootstrap.minn.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> 
+	<!-- favicon -->
+</head>
+<body>
+<!-- MENU DE NAVEGACION -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Cenabastos</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="proveedores.php">PROVEEDORES</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">CONTACTOS</a>
+                    </li>
+                    <li>
+                    <a>
+                    	<form method="get" action="">
+                    		<input type="text" name="title" placeholder="" value="">
+                    		<input class="button" type="submit" value="BUSCAR" />
+                    	</form>
+                    	</a>	
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- CENABASTOS-->
+<header class="intro-header" style="background-image: url('img/4.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>START </h1>
+                        <hr class="small">
+                        <span class="subheading">A Servidor Private by Start Firestorm</span></div>
+                        </div>
+        <div class="col-md-6"></div>
+       <!--<div class="col-md-6">   
+<div class="caja-social">
+<ul class="list-inline text-center">
+                        <li class="animated infinite pulse" id="google-plus">
+                            <a class="icon-button google-plus" href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="animated infinite pulse" id="youtube-play">
+                            <a class="icon-button youtube-play" href="#">
+                                    <i class="fa fa-youtube-play"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="animated infinite pulse" id="facebook">
+                            <a class="icon-button facebook" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="animated infinite pulse" id="twitter">
+                            <a class="icon-button twitter" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="animated infinite pulse" id="instagram">
+                            <a class="icon-button instagram" href="#">
+                                    <i class="fa fa-instagram"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+  </div>
+  
+          </div>-->
+
+
+                    </div>
+                </div>
+    </header>
+ <div class="container">
+            <div class="row">
+            <div class="col-lg-8"></div>
+                <div class="col-lg-4">
+        <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i>
+                            Chat
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+        <div class="row">
+        <hr>
+        <div class="col-xs-12 col-sm-7 hidden-xs">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.711540179877!2d-72.49406298465054!3d7.9251678074787035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e664534f859186b%3A0xf42447869d691edb!2sCenabastos+de+Cucuta!5e0!3m2!1ses!2ses!4v1468510310178" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<h3>Localizacion</h3>
+                    <div class="hotel">
+                        <h4>Cluster Games</h4>
+                        <p>situado en el centro de Cúcuta, Norte de santander calle 7B 3v-75 Parque de las palomas.</p>
+                        <a href="">Consultar Disponibilidad</a>
+                    </div>
+                    <div class="hotel">
+                        <h4>Cluster Games</h4>
+                        <p>situado en el centro de Bogota,en el centro calle 8D 8v-35 Parque de las palomas.</p>
+                        <a href="">Consultar Disponibilidad</a>
+                    </div>
+</div>                    
+        <div class="col-xs-12 col-sm-7 visible-xs">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.711540179857!2d-72.4940629846506!3d7.9251678074787035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e664534f859186b%3A0xf42447869d691edb!2sCenabastos+de+Cucuta!5e0!3m2!1ses!2sco!4v1468933570081" width="280" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+<h3>Localizacion</h3>
+                    <div class="hotel">
+                        <h4>Cluster Games</h4>
+                        <p>situado en el centro de Cúcuta, Norte de santander calle 7B 3v-75 Parque de las palomas.</p>
+                        <a href="">Consultar Disponibilidad</a>
+                    </div>
+                    <div class="hotel">
+                        <h4>Cluster Games</h4>
+                        <p>situado en el centro de Bogota,en el centro calle 8D 8v-35 Parque de las palomas.</p>
+                        <a href="">Consultar Disponibilidad</a>
+                    </div>
+ </div>
+ <div class="col-xs-12 col-sm-5">
+                    <h3>Preguntas Frecuentes</h3>
+                
+                    <h4>¿Qué ocurre si finalmente no me llegan los creditos?</h4>
+                    <p>Firestorm tendra la obligación de responder a este tipos de problemas</p>
+                
+                    <h4>¿Existen descuentos para los primeros registros?</h4>
+                    <p>Efectivamente podrás contar con un interesante descuento si es tu primera donación.</p>
+                
+                    <h4>¿Por qué no todos los puntos de pagos tienen el mismo precio?</h4>
+                    <p>Lamentablemente el precio depende en el país que andas y el precio de la moneda en la que está.</p>
+                
+                    <h4>¿Cuándo me llegan los creditos?</h4>
+                    <p>Dependiendo el punto de pago escogido este debe confirmar el pago para que se pueda enviar los creditos.</p>
+              
+                    <h4>¿Con quién he de contactar si tengo algún problema?</h4>
+                    <p>Firestorm asignará un responsable que se comunicará a todos los asistentes por e-Mail. Si necesitas ayuda de un administrados <a href="">nos puedes contactar aquí.</a></p>
+                
+                    <h4>¿Los administradores participarán ante cualquier emergencia?</h4>
+                    <p>Si, ellos son los encargados de mantener el servidor en funcionamiento junto con sus asistentes.</p>
+ </div>
+ </div>
+ </div>
+ <hr>
+ <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="caja-social">
+                    <ul class="list-inline text-center">
+                        <li id="google-plus">
+                            <a class="icon-button google-plus" href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li id="youtube-play">
+                            <a class="icon-button youtube-play" href="#">
+                                    <i class="fa fa-youtube-play"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li id="facebook">
+                            <a class="icon-button facebook" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li id="twitter">
+                            <a class="icon-button twitter" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                        <li id="instagram">
+                            <a class="icon-button instagram" href="#">
+                                    <i class="fa fa-instagram"></i>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                    <p class="copyright text-muted">Copyright &copy; Start Firestorm 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+</body>
+
+</html>
